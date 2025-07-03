@@ -1,0 +1,70 @@
+* {
+    transition: cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.oswald-font {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+html {
+    height: 100vh;
+    background-image: black;/*linear-gradient(to top right, rgb(29, 29, 29), rgb(56, 56, 56));*/
+    background-color: black;/* rgb(40, 40, 40); */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+body {
+    margin: 0;
+}
+
+header {
+  position: fixed;
+  display: flex;
+  flex-direction: row-reverse;
+  width: 100%;
+  background-color: rgba(27, 27, 27, 0.5);
+}
+.header-menu {
+  width: 10vh;
+  height: 10vh;
+  background-color: blue;
+}
+
+/* main */
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.fadeup {
+  animation: fadeUp 0.6s ease-out forwards;
+}
+
+.main-section {
+    height: 100vh;
+    background: 
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(27, 27, 27, 0.5)),
+    url('https://lh3.googleusercontent.com/a-/ALV-UjVfwFEB_FY3PDKNvIpTmwtvgoHS0S7MDwH_G1wwwRKX2MtEZjoe=s743-p-k-rw-no') no-repeat right center;
+}
+.main-text {
+    width: 30%;
+    /* background-image: linear-gradient(to right, rgb(29, 29, 29), rgb(0, 0, 0)); */
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
+    padding: 20% 0 0 10%;
+    text-align: center;
+}
+.main-text > * {
+    margin: 0;
+    color: bisque;
+}
+.main-text > p {
+    text-align: left;
+}
+/* main */
