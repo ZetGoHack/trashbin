@@ -4,7 +4,7 @@
 .oswald-font {
   font-family: "Oswald", sans-serif;
   font-optical-sizing: auto;
-  font-weight: weight;
+  font-weight: 700;
   font-style: normal;
 }
 html {
@@ -21,11 +21,17 @@ body {
 header {
   position: fixed;
   display: flex;
-  flex-direction: row-reverse;
+  justify-content: space-between;
   width: 100%;
   background-color: rgba(27, 27, 27, 0.5);
 }
-.header-menu {
+.header-nav {
+
+}
+.header-nav > li {
+  padding: 40% 0px 0px 5px;
+}
+.header-burger-menu {
   width: 10vh;
   height: 10vh;
   background-color: blue;
