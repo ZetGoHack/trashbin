@@ -1,5 +1,5 @@
 * {
-    transition: cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: cubic-bezier(0.165, 0.84, 0.44, 1) 0.5s;
 }
 .oswald-font {
   font-family: "Oswald", sans-serif;
@@ -18,6 +18,64 @@ body {
     margin: 0;
 }
 
+header a {
+  text-decoration: none;
+}
+
+header a:link {
+  color: bisque;
+}
+
+header a:visited {
+  color: bisque;
+}
+
+header a:hover {
+  color: rgb(255, 197, 125);
+}
+
+header a:active {
+  color: yellow;
+}
+
+.current-page > .header-link-text::after {
+    content: '';
+    position: absolute;
+    bottom: -10%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 3px;
+    background-color: bisque;
+    transition: 0.5s ease;
+}
+
+.current-page > .header-link-text:hover::after {
+  background-color: rgb(255, 197, 125);
+}
+
+.header-link-text {
+  position: relative;
+  display: inline-block;
+}
+
+.header-link-text::after {
+    content: '';
+    position: absolute;
+    bottom: -10%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 3px;
+    background-color: rgb(255, 197, 125);
+    transition: 0.5s ease;
+}
+
+.header-link-text:hover::after {
+  width: 100%;
+}
+
+
 header {
   position: fixed;
   display: flex;
@@ -26,14 +84,19 @@ header {
   background-color: rgba(27, 27, 27, 0.5);
 }
 .header-nav {
+  display: flex;
+  margin-left: 5%;
   color: bisque;
 }
-.header-nav > li {
-  margin: 3.5vh 0 3.5vh 100%;
-  list-style-type: none;
-  width: 6vh;
+.header-nav > a {
+  margin: 3.5vh 0;
+  padding: 0 3vh;
   height: 3vh;
-  border-right: 1px bisque solid;
+  /* border-right: 1px bisque solid; */
+}
+.header-nav > a > * {
+  list-style-type: none;
+  margin: 0;
 }
 .header-burger-menu {
   width: 10vh;
@@ -84,5 +147,15 @@ header {
     height: 100vh;
     background: linear-gradient(to top, rgb(68, 68, 68), rgba(27, 27, 27, 0.5));
     border-top: 1px rgba(131, 131, 131, 0.265) solid;
+}
+.socials-section {
+    height: 25px;
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.socials-section > svg {
+  display: inline-block;
 }
 /* main */
