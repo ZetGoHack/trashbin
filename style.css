@@ -89,7 +89,7 @@ header {
   color: bisque;
 }
 .header-nav > a {
-  margin: 3.5vh 0;
+  margin: 4.5vh 0;
   padding: 0 3vh;
   height: 3vh;
 }
@@ -98,9 +98,11 @@ header {
   margin: 0;
 }
 .header-burger-menu {
-  width: 10vh;
-  height: 10vh;
-  background-color: blue;
+  width: 12vh;
+  height: 12vh;
+}
+.header-burger-menu > a > img {
+  width: 100%;
 }
 
 /* head */
@@ -149,6 +151,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 110px;
 }
 .socials-section > svg {
   display: inline-block;
