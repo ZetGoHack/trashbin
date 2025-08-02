@@ -130,6 +130,9 @@ header {
     padding-top: 20vh;
     text-align: center;
 }
+.head-text--about {
+    width: 50%;
+}
 .head-text > * {
     margin: 0;
     color: bisque;
@@ -164,6 +167,10 @@ header {
 /* main */
 
 /* footer */
+footer {
+  align-content: center;
+  height: 25vh;
+}
 .socials-section {
     display: flex;
     justify-content: space-between;
