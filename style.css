@@ -124,7 +124,10 @@ header {
     height: 100vh;
     background: 
     linear-gradient(rgba(0, 0, 0, 0.5), rgba(27, 27, 27, 0.5)),
-    url('https://lh3.googleusercontent.com/a-/ALV-UjVfwFEB_FY3PDKNvIpTmwtvgoHS0S7MDwH_G1wwwRKX2MtEZjoe=s743-p-k-rw-no') no-repeat right center;
+    url('resources/andrey_soyka_bg.webp') no-repeat right center;
+}
+.head-section--no-bg {
+    height: 100vh;
 }
 .head-text {
     padding-top: 20vh;
